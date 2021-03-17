@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C language</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        .data {
+            display: grid;
+            grid-template-columns: 200px auto;
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .foot {
+            border: 0px solid black;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #sidebar {
+            background-color: rgb(236 230 243);
+            overflow: auto;
+            grid-row-start: 1;
+            grid-row-end: -1;
+            z-index: -1;
+
+        }
+
+        #sidebar a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            list-style: none;
+            color: inherit;
+        }
+
+        #content {
+            background-color: #ffffff;
+            z-index: -1;
+            grid-row: 1/-1;
+        }
+
+        .question {
+            color: #0b286a;
+            margin: 30px;
+            font-size: 13px;
+            border: 0px solid black;
+        }
+
+        .question img {
+            height: 50%;
+            width: 60%;
+            margin: 20px 0px 20px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav"></div>
+    <div class="data">
+        <div id="sidebar">
+            <a href="#contact">C - Home</a>
+            <a href="#about">C - Overview</a>
+            <a href="#services">C - Environment Setup</a>
+            <a href="#clients">C - Program Structure</a>
+            <a href="#contact">C - Basic Syntax</a>
+            <a href="#contact">C - Data Types</a>
+        </div>
+        <div id="content">
+            <div class="question">
+                <h1>Write a C Program to print your introduction like Name, address, city, district and other
+                    details about you</h1>
+                <img src="c/1.JPG">
+            </div>
+
+            <div class="question">
+                <h1>Write a Program to read integer numbers and print it</h1>
+                <img src="c/2.JPG" alt="">
+            </div>
+            <div class="question">
+                <h1>Write a Program to read float value and print it.</h1>
+                <img src="c/3.JPG">
+            </div>
+            <div class="question">
+                <h1>Write a Program to perform addition of two numbers.</h1>
+                <img src="c/4.JPG" alt="">
+            </div>
+            <div class="question">
+                <h1>Write a Program to perform arithmetic operation on two numbers. (take input of
+                    number from keyboard using scanf())</h1>
+                <img src="c/5.JPG" alt="">
+            </div>
+            <div class="question">
+                <h1>Write a program to print ASCII value of entered character and Character for entered
+                    ASCII value between 0-127.</h1>
+                <img src="c/6.JPG" alt="">
+            </div>
+            <div class="question">
+                <h1>Write a Program to find quotient and remainder using (/ and %).
+                </h1> <img src="c/7.JPG" alt="">
+            </div>
+            <div class="question">
+                <h1>Write a Program to SWAP value of two variable using temp variable</h1>
+                <img src="c/8.JPG" alt="">
+            </div>
+            <div class="question">
+                <h1>Write a Program to SWAP value of two variable without using temp variable.</h1>
+                <img src="c/9.JPG" alt="">
+            </div>
+            <div class="question">
+                <h1>Write a Program to find area and perimeter of Square.</h1>
+                <img src="c/10.JPG" alt="">
+            </div>
+
+
+            <footer class="foot"> THIS IS A FOOTER </footer>
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+    $(function () {
+        $("#nav").load("navbar.html");
+    });
+</script>
+
+</html

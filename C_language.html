@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C language</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        .data {
+            display: grid;
+            grid-template-columns: 200px auto;
+            grid-template-rows: repeat(3, 1fr);
+        }
+        .foot{
+            border: 0px solid black;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #sidebar {
+            background-color: rgb(236 230 243);
+            overflow: auto;
+            grid-row-start: 1;
+            z-index: -1;
+            grid-row-end: -1;
+
+        }
+
+        #sidebar a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            list-style: none;
+            color: inherit;
+        }
+
+        #content {
+            background-color: #ffffff;
+            z-index: -1;
+            grid-row: 1/-1;
+        }
+
+        .head {
+            margin-top: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .para {
+            margin: 15px;
+        }
+        .points{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            position: relative;
+            padding-left: 100px;
+        }
+        .demo{
+            background-color: rgb(20, 19, 19);
+            position: relative;
+            width: 500px;
+            padding: 10px;
+            margin-left: 100px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav"></div>
+    <div class="data">
+        <div id="sidebar">
+            <a href="#contact">C - Home</a>
+            <a href="#about">C - Overview</a>
+            <a href="#services">C - Environment Setup</a>
+            <a href="#clients">C - Program Structure</a>
+            <a href="#contact">C - Basic Syntax</a>
+            <a href="#contact">C - Data Types</a>
+        </div>
+        <div id="content">
+            <H1 class="head">C Tutorial</H1>
+            <p class="para">C programming is a general-purpose, procedural, imperative computer programming
+                language developed in
+                1972 by Dennis M. Ritchie at the Bell Telephone Laboratories to develop the UNIX operating system. C is
+                the most widely used computer language. It keeps fluctuating at number one scale of popularity along
+                with Java programming language, which is also equally popular and most widely used among modern software
+                programmers.</p>
+            <h1 class="head">Why to Learn C Programming?</h1>
+            <p class="para">C programming language is a MUST for students and working professionals to become a great
+                Software
+                Engineer specially when they are working in Software Development Domain. I will list down some of the
+                key advantages of learning C Programming:</p>
+            <p>
+            <ul class="points">
+                <li>Easy to learn</li>
+                <li>Structured language</li>
+                <li>It produces efficient programs</li>
+                <li>It can handle low-level activities</li>
+                <li>It can be compiled on a variety of computer platforms</li>
+            </ul>
+            </p>
+            <h1 class="head">Facts about C</h1>
+            <p>
+                <ul class="points">
+                    <li>C was invented to write an operating system called UNIX.</li>
+                    <li>C is a successor of B language which was introduced around the early 1970s.</li>
+                    <li>The language was formalized in 1988 by the American National Standard Institute (ANSI).</li>
+                    <li>The UNIX OS was totally written in C.</li>
+                    <li>Today C is the most widely used and popular System Programming Language.</li>
+                    <li>Most of the state-of-the-art software have been implemented using C.</li>
+                </ul>
+            </p>
+            <h1 class="head">Hello World using C Programming.</h1>
+            <p class="para">Just to give you a little excitement about C programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</p>
+            <div class="demo">
+                <pre class="code">
+                    #include&lt;stdio.h&gt;
+                    int main() {
+                       /* my first program in C */
+                       printf("Hello, World! \n");
+                       
+                       return 0;
+                    }</pre>
+            </div>
+            <footer class="foot"> THIS IS A FOOTER </footer>
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+    $(function () {
+        $("#nav").load("navbar.html");
+    });
+</script>
+
+</html

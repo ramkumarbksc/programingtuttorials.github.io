@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOC</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 70px 30px;
+            grid-template-columns: 0px 100%;
+        }
+
+        
+
+        #logo_head {
+            border: 0px solid black;
+            display: block;
+            background-color: #feffa09e;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        #heading {
+            padding-top: 0px;
+            border: 0px solid black;
+            height: 30px;
+            background-color: #4e3333;
+            font-size: large;
+            font-family: cursive;
+            margin-top: 0px;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: -2;
+        }
+
+        #heading ul li {
+            display: inline-block;
+            padding: 2px 14px;
+            border: 0px solid black;
+            background-color: #4e3333;
+        }
+
+        #heading ul li a {
+            list-style: none;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        #heading ul li:hover>ul {
+            display: block;
+        }
+
+        #hid {
+            float: left;
+            width: 0px;
+            margin-top: 24px;
+            background-color: black;
+            display: none;
+            color: white;
+        }
+
+        #heading ul li:hover {
+            color: #fbff18;
+        }
+
+        #heading ul li ul li:hover {
+            color: #fbff18;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="logo_head">
+            <img src="aoc.png" alt="logo" style="height: 59px; width: 140px; padding: 3px;display: block;
+            margin-left: auto;
+            margin-right: auto;">
+        </div>
+        <div id="heading">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li>Practicals Source Code     
+                    <ul id="hid">
+                        <li><a href="php_practicals.html"><pre>PHP</pre></a></li>
+                        <li><a href="C_practicals.html"><pre>C Programing</pre></a></li>
+                    </ul>
+                </li>
+                <li><a href="php.html">PHP</a></li>
+                <li><a href="C_language.html">C Language</a></li>
+                <li>Web Devlopment
+                    <ul id="hid">
+                        <li><a href="HTML.html"><pre>HTML</a></pre></li>
+                        <li><a href="CSS.html"><pre>CSS</pre></a></li>
+                        <li><a href="JAVASCRIPT.html"><pre>JavaScripts</pre></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
